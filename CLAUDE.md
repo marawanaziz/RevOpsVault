@@ -1,4 +1,4 @@
-# RevVault
+# RevOpsVault
 
 ## What This Is
 This is a Claude Code configuration package that scaffolds Obsidian vaults

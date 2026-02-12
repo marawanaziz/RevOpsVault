@@ -2,7 +2,7 @@
   <img src="./assets/logo.svg" alt="SixtySixTen Logo" width="280"/>
 </p>
 
-<h1 align="center">RevVault</h1>
+<h1 align="center">RevOpsVault</h1>
 
 <p align="center">
   The operational GTM system of record, built on Obsidian and Claude Code.
@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  RevVault scaffolds a fully structured Obsidian vault pre-configured for B2B revenue operations. Every Claude Code conversation starts with your business context loaded automatically: ICPs, personas, deal history, call transcripts, campaign data, and more.
+  RevOpsVault scaffolds a fully structured Obsidian vault pre-configured for B2B revenue operations. Every Claude Code conversation starts with your business context loaded automatically: ICPs, personas, deal history, call transcripts, campaign data, and more.
 </p>
 
 ---
@@ -28,7 +28,7 @@
 - Sales calls get logged but never connected to deals, personas, or pipeline. Insights stay trapped in individual notes.
 - RevOps teams spend more time finding information than acting on it. Context switching kills execution speed.
 
-**RevVault turns Obsidian into a structured system of record for your entire revenue operation.** Every document links to related documents through wiki-links, creating a navigable knowledge graph. Every AI interaction draws on your accumulated business context. Every command auto-links new content to what already exists.
+**RevOpsVault turns Obsidian into a structured system of record for your entire revenue operation.** Every document links to related documents through wiki-links, creating a navigable knowledge graph. Every AI interaction draws on your accumulated business context. Every command auto-links new content to what already exists.
 
 ---
 
@@ -87,13 +87,13 @@
    ```bash
    mkdir ~/my-vault && cd ~/my-vault
    ```
-3. Clone RevVault into it:
+3. Clone RevOpsVault into it:
    ```bash
-   git clone https://github.com/marawanaziz/revvault.git
+   git clone https://github.com/marawanaziz/revopsvault.git
    ```
 4. Enter the clone directory:
    ```bash
-   cd revvault
+   cd revopsvault
    ```
 5. Start Claude Code:
    ```bash
@@ -105,7 +105,7 @@
    ```
 7. After setup completes, delete the clone directory:
    ```bash
-   cd .. && rm -rf revvault/
+   cd .. && rm -rf revopsvault/
    ```
 
 **What the wizard does:** It asks about your business, creates the full vault folder structure, installs all 28 commands along with skills, agents, and templates, generates a CLAUDE.md tailored to your company, builds navigation hubs, deploys 18 Obsidian Base database views, and optionally configures GitHub sync for backup and team collaboration.
@@ -285,7 +285,7 @@ your-vault/
 
 ## Need Help Implementing This?
 
-RevVault is free and open source. You can clone it, run `/setup`, and start building your GTM knowledge base today.
+RevOpsVault is free and open source. You can clone it, run `/setup`, and start building your GTM knowledge base today.
 
 If you want help tailoring it to your team's workflow, building custom commands for your sales process, or operationalizing your entire GTM knowledge base with structured onboarding and rollout, we can help.
 
