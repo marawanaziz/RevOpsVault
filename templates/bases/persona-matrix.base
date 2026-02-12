@@ -1,0 +1,9 @@
+filters: 'file.inFolder("icp/personas")'
+properties:
+  file.name: { displayName: "Persona" }
+  status: { displayName: "Status" }
+  tags: { displayName: "Tags" }
+views:
+  - type: table
+    name: "All Personas"
+    order: [file.name, status, tags, file.mtime]

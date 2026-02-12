@@ -1,0 +1,23 @@
+filters:
+  or:
+    - 'status == "draft"'
+    - 'status == "in-review"'
+formulas:
+  days_in_status: '(now() - file.mtime) / "1 day"'
+  is_stale: 'if(formula.days_in_status > 14, "STALE", "")'
+properties:
+  status: { displayName: "Status" }
+  author: { displayName: "Author" }
+  target-location: { displayName: "Target" }
+  file.mtime: { displayName: "Last Modified" }
+  formula.days_in_status: { displayName: "Days" }
+  formula.is_stale: { displayName: "Alert" }
+views:
+  - type: table
+    name: "Awaiting Review"
+    filters: 'status == "in-review"'
+    order: [file.name, author, target-location, file.mtime, formula.days_in_status]
+  - type: table
+    name: "Drafts"
+    filters: 'status == "draft"'
+    order: [file.name, author, target-location, file.mtime, formula.days_in_status, formula.is_stale]

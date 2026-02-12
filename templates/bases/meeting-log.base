@@ -1,0 +1,12 @@
+filters:
+  and:
+    - 'file.inFolder("meetings")'
+    - '!file.name.startsWith("_")'
+properties:
+  date: { displayName: "Date" }
+  type: { displayName: "Type" }
+  status: { displayName: "Status" }
+views:
+  - type: table
+    name: "All Meetings"
+    order: [date, file.name, type, status]

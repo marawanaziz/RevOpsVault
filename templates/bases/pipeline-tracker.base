@@ -1,0 +1,19 @@
+filters:
+  and:
+    - 'file.inFolder("sales/deals")'
+    - '!file.name.startsWith("_")'
+formulas:
+  days_since_update: '(now() - file.mtime) / "1 day"'
+properties:
+  stage: { displayName: "Stage" }
+  deal-value: { displayName: "Value" }
+  contact: { displayName: "Contact" }
+  file.mtime: { displayName: "Last Updated" }
+views:
+  - type: table
+    name: "Pipeline by Stage"
+    group_by: "stage"
+    order: [file.name, stage, deal-value, contact, file.mtime, formula.days_since_update]
+  - type: table
+    name: "All Deals"
+    order: [file.name, stage, deal-value, contact, file.mtime]

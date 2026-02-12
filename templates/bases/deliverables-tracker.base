@@ -1,0 +1,12 @@
+filters:
+  and:
+    - 'file.inFolder("deliverables")'
+    - '!file.name.startsWith("_")'
+properties:
+  status: { displayName: "Status" }
+  author: { displayName: "Author" }
+  file.mtime: { displayName: "Last Modified" }
+views:
+  - type: table
+    name: "All Deliverables"
+    order: [file.name, status, author, file.mtime]

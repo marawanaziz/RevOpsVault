@@ -1,0 +1,15 @@
+filters:
+  and:
+    - 'file.inFolder("sales/calls")'
+    - '!file.name.startsWith("_")'
+formulas:
+  age: '(now() - date) / "1 day"'
+properties:
+  date: { displayName: "Date" }
+  type: { displayName: "Call Type" }
+  client: { displayName: "Client" }
+  status: { displayName: "Status" }
+views:
+  - type: table
+    name: "Recent Calls"
+    order: [date, file.name, type, client, status]
