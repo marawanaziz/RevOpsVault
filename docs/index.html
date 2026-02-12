@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RevOpsVault — The Operational GTM System of Record</title>
+  <meta name="description" content="RevOpsVault scaffolds a fully structured Obsidian vault pre-configured for B2B revenue operations. Built on Obsidian and Claude Code." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-white text-black antialiased">
+
+  <!-- ========== 1. NAVBAR ========== -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-gray-300">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- SixtySixTen Logo -->
+      <a href="https://sixtysixten.com" target="_blank" rel="noopener" class="flex items-center gap-3 no-underline">
+        <svg width="140" height="48" viewBox="0 0 410 140" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="100" height="100" fill="#000"></rect>
+          <text x="70" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#fff" dominant-baseline="auto">66</text>
+          <line x1="40" y1="70" x2="100" y2="70" stroke="#fff" stroke-width="2"></line>
+          <text x="70" y="82" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#fff" dominant-baseline="hanging">10</text>
+          <text x="150" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="600" letter-spacing="1" fill="#000">SIXTYSIXTEN</text>
+        </svg>
+      </a>
+      <a href="https://github.com/marawanaziz/revvault" target="_blank" rel="noopener"
+         class="inline-block bg-black text-white text-xs font-bold uppercase tracking-wider px-5 py-2.5 no-underline hover:bg-gray-800 transition-colors">
+        VIEW ON GITHUB
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO ========== -->
+  <section class="border-b border-gray-300 bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+      <div class="fade-in-section">
+        <h1 class="text-5xl md:text-7xl font-bold uppercase tracking-tight leading-none">
+          REVOPSVAULT
+        </h1>
+        <p class="mt-3 text-xl md:text-2xl italic text-gray-600" style="font-family: Georgia, 'Times New Roman', serif;">
+          The operational GTM system of record
+        </p>
+        <p class="mt-6 max-w-2xl text-gray-700 text-lg leading-relaxed">
+          RevOpsVault scaffolds a fully structured Obsidian vault pre-configured for B2B revenue operations. Every Claude Code conversation starts with your business context loaded automatically: ICPs, personas, deal history, call transcripts, campaign data, and more.
+        </p>
+
+        <!-- Badges -->
+        <div class="mt-8 flex flex-wrap gap-2">
+          <img src="https://img.shields.io/badge/License-MIT-black?style=flat-square&color=black" alt="MIT License" />
+          <img src="https://img.shields.io/badge/Claude_Code-CLI-black?style=flat-square&color=black" alt="Claude Code" />
+          <img src="https://img.shields.io/badge/Obsidian-Vault-black?style=flat-square&color=black" alt="Obsidian" />
+          <img src="https://img.shields.io/badge/Slash_Commands-28-black?style=flat-square&color=black" alt="28 Slash Commands" />
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="mt-10 grid grid-cols-3 md:grid-cols-6 divide-x divide-gray-300 border border-gray-300 text-center">
+          <div class="py-4 px-2">
+            <div class="text-2xl md:text-3xl font-bold">28</div>
+            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1">Commands</div>
+          </div>
+          <div class="py-4 px-2">
+            <div class="text-2xl md:text-3xl font-bold">18</div>
+            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1">Views</div>
+          </div>
+          <div class="py-4 px-2">
+            <div class="text-2xl md:text-3xl font-bold">3</div>
+            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1">Agents</div>
+          </div>
+          <div class="py-4 px-2">
+            <div class="text-2xl md:text-3xl font-bold">26</div>
+            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1">Templates</div>
+          </div>
+          <div class="py-4 px-2">
+            <div class="text-2xl md:text-3xl font-bold">8</div>
+            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1">Hubs</div>
+          </div>
+          <div class="py-4 px-2">
+            <div class="text-2xl md:text-3xl font-bold">2</div>
+            <div class="text-xs uppercase tracking-wider text-gray-500 mt-1">Skills</div>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="#quick-start"
+             class="inline-block bg-black text-white text-sm font-bold uppercase tracking-wider px-8 py-3 no-underline hover:bg-gray-800 transition-colors">
+            GET STARTED
+          </a>
+          <a href="https://github.com/marawanaziz/revvault" target="_blank" rel="noopener"
+             class="inline-block border border-gray-400 text-black text-sm font-bold uppercase tracking-wider px-8 py-3 no-underline hover:bg-gray-100 transition-colors">
+            VIEW ON GITHUB
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3. PROBLEM ========== -->
+  <section class="border-b border-gray-300 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="fade-in-section">
+        <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-tight">THE PROBLEM</h2>
+        <p class="mt-2 text-lg italic text-gray-600" style="font-family: Georgia, 'Times New Roman', serif;">
+          Why your GTM knowledge is broken
+        </p>
+
+        <ul class="mt-10 space-y-5 max-w-3xl">
+          <li class="flex items-start gap-3">
+            <span class="mt-2 block w-1.5 h-1.5 bg-black flex-shrink-0"></span>
+            <span class="text-gray-700 leading-relaxed">GTM knowledge lives in scattered docs, Slack threads, and people's heads. There is no single source of truth.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-2 block w-1.5 h-1.5 bg-black flex-shrink-0"></span>
+            <span class="text-gray-700 leading-relaxed">Every Claude conversation starts from scratch with zero business context, so you re-explain your ICP, deal stages, and processes every time.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-2 block w-1.5 h-1.5 bg-black flex-shrink-0"></span>
+            <span class="text-gray-700 leading-relaxed">Sales calls get logged but never connected to deals, personas, or pipeline. Insights stay trapped in individual notes.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="mt-2 block w-1.5 h-1.5 bg-black flex-shrink-0"></span>
+            <span class="text-gray-700 leading-relaxed">RevOps teams spend more time finding information than acting on it. Context switching kills execution speed.</span>
+          </li>
+        </ul>
+
+        <p class="mt-10 max-w-3xl text-gray-900 font-medium leading-relaxed">
+          <strong>RevOpsVault turns Obsidian into a structured system of record for your entire revenue operation.</strong> Every document links to related documents through wiki-links, creating a navigable knowledge graph. Every AI interaction draws on your accumulated business context. Every command auto-links new content to what already exists.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. WHAT YOU GET ========== -->
+  <section class="border-b border-gray-300 bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="fade-in-section">
+        <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-tight">WHAT YOU GET</h2>
+        <p class="mt-2 text-lg italic text-gray-600" style="font-family: Georgia, 'Times New Roman', serif;">
+          Four pillars of revenue operations
+        </p>
+
+        <div class="mt-12 grid md:grid-cols-2 gap-6">
+          <!-- Card 01 — Sales -->
+          <div class="border border-gray-300 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-8 h-8 bg-gray-200 text-xs font-bold">01</span>
+              <h3 class="text-lg font-bold uppercase tracking-tight">Sales Intelligence</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Call logging with auto-linking to deals, personas, and pipeline
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Deal tracking with stale alerts and missing-info flags
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Pipeline reports, win/loss analysis, and objection detection
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Outbound sequence generation by persona and segment
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Pre-call briefings assembled from accumulated vault context
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 02 — CS -->
+          <div class="border border-gray-300 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-8 h-8 bg-gray-200 text-xs font-bold">02</span>
+              <h3 class="text-lg font-bold uppercase tracking-tight">Customer Success</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Account health tracking with renewal timelines and risk scoring
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Interaction logging for QBRs, onboarding, and support calls
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Escalation tracking by severity, category, and resolution
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Expansion pipeline for upsell and cross-sell opportunities
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Sales-to-CS handoff with full context transfer
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 03 — Marketing -->
+          <div class="border border-gray-300 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-8 h-8 bg-gray-200 text-xs font-bold">03</span>
+              <h3 class="text-lg font-bold uppercase tracking-tight">Marketing Operations</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Campaign tracking across channels with performance metrics
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Lead tracking with MQL/SQL qualification scoring
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                A/B test experiment tracking and statistical analysis
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Event management with ROI tracking
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Attribution analysis connecting campaigns to pipeline revenue
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 04 — Cross-Functional -->
+          <div class="border border-gray-300 p-6">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="inline-flex items-center justify-center w-8 h-8 bg-gray-200 text-xs font-bold">04</span>
+              <h3 class="text-lg font-bold uppercase tracking-tight">Cross-Functional</h3>
+            </div>
+            <ul class="space-y-2 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Full-funnel view from lead capture to closed-won to expansion
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Vault health diagnostics with scoring and remediation
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Weekly recaps aggregating all activity across departments
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Draft/review/publish workflow for document governance
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="mt-1.5 block w-1 h-1 bg-black flex-shrink-0"></span>
+                Lead qualification framework with configurable scoring
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. QUICK START ========== -->
+  <section id="quick-start" class="border-b border-gray-300 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="fade-in-section">
+        <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-tight">QUICK START</h2>
+        <p class="mt-2 text-lg italic text-gray-600" style="font-family: Georgia, 'Times New Roman', serif;">
+          From zero to a fully structured vault in minutes
+        </p>
+
+        <!-- Prerequisites -->
+        <div class="mt-10 mb-12">
+          <h3 class="text-sm font-bold uppercase tracking-wider text-gray-500 mb-4">Prerequisites</h3>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-black flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Claude Code CLI &mdash; <code class="text-sm bg-gray-200 px-1.5 py-0.5">npm install -g @anthropic-ai/claude-code</code></span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-black flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Obsidian &mdash; <a href="https://obsidian.md" target="_blank" rel="noopener" class="underline">obsidian.md</a></span>
+            </li>
+            <li class="flex items-center gap-3">
+              <svg class="w-5 h-5 text-black flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              <span class="text-gray-700">Enable Bases core plugin in Obsidian (Settings &gt; Core Plugins &gt; Bases)</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Step Cards -->
+        <div class="space-y-4">
+          <!-- Step 1 -->
+          <div class="border border-gray-300 bg-white p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">1</span>
+              <h3 class="font-bold text-sm uppercase tracking-wider">Create your vault folder</h3>
+            </div>
+            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> mkdir ~/my-vault &amp;&amp; cd ~/my-vault</code></pre>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="border border-gray-300 bg-white p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">2</span>
+              <h3 class="font-bold text-sm uppercase tracking-wider">Clone RevOpsVault</h3>
+            </div>
+            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> git clone https://github.com/marawanaziz/revopsvault.git</code></pre>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="border border-gray-300 bg-white p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">3</span>
+              <h3 class="font-bold text-sm uppercase tracking-wider">Enter the directory</h3>
+            </div>
+            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> cd revopsvault</code></pre>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="border border-gray-300 bg-white p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">4</span>
+              <h3 class="font-bold text-sm uppercase tracking-wider">Start Claude Code</h3>
+            </div>
+            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> claude</code></pre>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="border border-gray-300 bg-white p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">5</span>
+              <h3 class="font-bold text-sm uppercase tracking-wider">Run the setup wizard</h3>
+            </div>
+            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">&gt;</span> /setup</code></pre>
+            <p class="mt-3 text-sm text-gray-500">The wizard asks about your business, creates the full vault structure, installs all 28 commands, generates a CLAUDE.md tailored to your company, and deploys 18 database views.</p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="border border-gray-300 bg-white p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">6</span>
+              <h3 class="font-bold text-sm uppercase tracking-wider">Cleanup the clone</h3>
+            </div>
+            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> cd .. &amp;&amp; rm -rf revopsvault/</code></pre>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="border border-gray-300 bg-white p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">7</span>
+              <h3 class="font-bold text-sm uppercase tracking-wider">Start using your vault</h3>
+            </div>
+            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> cd ~/my-vault &amp;&amp; claude
+<span class="text-gray-500">&gt;</span> /log-call
+<span class="text-gray-500">&gt;</span> /pipeline-report
+<span class="text-gray-500">&gt;</span> /vault-health</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. HOW IT WORKS ========== -->
+  <section class="border-b border-gray-300 bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="fade-in-section">
+        <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-tight">HOW IT WORKS</h2>
+        <p class="mt-2 text-lg italic text-gray-600" style="font-family: Georgia, 'Times New Roman', serif;">
+          Six building blocks that make the vault intelligent
+        </p>
+
+        <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- CLAUDE.md -->
+          <div class="border border-gray-300 p-6">
+            <h3 class="font-bold text-sm uppercase tracking-wider mb-3">CLAUDE.md</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">Every Claude Code session automatically reads CLAUDE.md from your vault root. This file contains your company profile, ICP definitions, deal stages, naming conventions, and folder structure. Claude starts every conversation already knowing your business.</p>
+          </div>
+
+          <!-- Wiki-Links -->
+          <div class="border border-gray-300 p-6">
+            <h3 class="font-bold text-sm uppercase tracking-wider mb-3">Wiki-Links</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">Every document contains [[wiki-links]] to related documents. A call note links to its deal, the deal links to the persona, and the persona links to the ICP segment. Obsidian's Graph View renders these connections visually.</p>
+          </div>
+
+          <!-- Commands -->
+          <div class="border border-gray-300 p-6">
+            <h3 class="font-bold text-sm uppercase tracking-wider mb-3">Commands</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">Slash commands do more than create files. They read existing vault content, auto-link new documents to related notes, enforce naming conventions, and maintain frontmatter consistency. The output is always a well-connected node in your knowledge graph.</p>
+          </div>
+
+          <!-- Base Views -->
+          <div class="border border-gray-300 p-6">
+            <h3 class="font-bold text-sm uppercase tracking-wider mb-3">Base Views</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">The 18 .base files are Obsidian Base configurations that query your vault via frontmatter properties. They render as filterable, sortable database views &mdash; like a CRM built from your markdown files.</p>
+          </div>
+
+          <!-- Skills -->
+          <div class="border border-gray-300 p-6">
+            <h3 class="font-bold text-sm uppercase tracking-wider mb-3">Skills</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">Two skill modules teach Claude the vault's conventions (folder structure, naming patterns, frontmatter schemas) and GTM document standards (quality criteria, required sections, linking rules). Commands reference these skills to maintain consistency.</p>
+          </div>
+
+          <!-- Agents -->
+          <div class="border border-gray-300 p-6">
+            <h3 class="font-bold text-sm uppercase tracking-wider mb-3">Agents</h3>
+            <p class="text-sm text-gray-700 leading-relaxed">Three subagents handle structured data processing: transcripts become linked call notes, CS interactions become account-connected records, and campaign data becomes attributed pipeline entries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. VAULT STRUCTURE ========== -->
+  <section class="border-b border-gray-300 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 py-20">
+      <div class="fade-in-section">
+        <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-tight">VAULT STRUCTURE</h2>
+        <p class="mt-2 text-lg italic text-gray-600" style="font-family: Georgia, 'Times New Roman', serif;">
+          What gets created when you run /setup
+        </p>
+
+        <pre class="mt-10 bg-gray-900 text-gray-100 font-mono text-sm p-6 rounded overflow-x-auto leading-relaxed"><code>your-vault/
+├── CLAUDE.md                          <span class="text-gray-500"># AI context, auto-loaded every session</span>
+├── HOME.md                            <span class="text-gray-500"># Entry point with navigation to all hubs</span>
+│
+├── hubs/                              <span class="text-gray-500"># Dashboard notes linking everything</span>
+│   ├── business-context.md
+│   ├── icp-and-personas.md
+│   ├── sales-pipeline.md
+│   ├── customer-success.md
+│   ├── marketing.md
+│   ├── automations.md
+│   ├── deliverables.md
+│   └── review-queue.md
+│
+├── company/                           <span class="text-gray-500"># Business context and competitive intel</span>
+│   ├── overview.md
+│   ├── team.md
+│   ├── tech-stack.md
+│   ├── pain-points.md
+│   ├── metrics.md
+│   └── competitors/
+│
+├── icp/                               <span class="text-gray-500"># Customer profiles and segmentation</span>
+│   ├── personas/
+│   └── segments/
+│
+├── sales/                             <span class="text-gray-500"># Pipeline, calls, deals, sequences</span>
+│   ├── calls/
+│   ├── deals/
+│   └── sequences/
+│
+├── customer-success/                  <span class="text-gray-500"># Post-sale operations</span>
+│   ├── accounts/
+│   ├── interactions/
+│   ├── playbooks/
+│   ├── escalations/
+│   ├── expansion/
+│   └── feedback/
+│
+├── marketing/                         <span class="text-gray-500"># Campaigns, content, leads, experiments</span>
+│   ├── campaigns/
+│   ├── content/
+│   ├── leads/
+│   ├── experiments/
+│   └── events/
+│
+├── automations/                       <span class="text-gray-500"># Workflow specs</span>
+├── deliverables/                      <span class="text-gray-500"># Reports, proposals</span>
+│   └── proposals/
+├── meetings/                          <span class="text-gray-500"># Internal sync notes</span>
+│
+├── bases/                             <span class="text-gray-500"># 18 Obsidian Base database views</span>
+│   ├── pipeline-tracker.base
+│   ├── call-log.base
+│   ├── account-health.base
+│   └── ... (15 more)
+│
+├── _drafts/                           <span class="text-gray-500"># Work in progress</span>
+├── _review/                           <span class="text-gray-500"># Pending approval</span>
+├── archive/                           <span class="text-gray-500"># Retired document versions</span>
+│
+└── .claude/
+    ├── commands/                      <span class="text-gray-500"># 28 slash commands</span>
+    ├── skills/                        <span class="text-gray-500"># Vault conventions + GTM standards</span>
+    └── agents/                        <span class="text-gray-500"># Call, interaction, campaign processors</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. CTA ========== -->
+  <section class="border-b border-gray-300 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6 py-20 text-center">
+      <div class="fade-in-section">
+        <h2 class="text-3xl md:text-4xl font-bold uppercase tracking-tight text-white">
+          NEED HELP IMPLEMENTING THIS?
+        </h2>
+        <p class="mt-3 text-lg italic text-gray-400" style="font-family: Georgia, 'Times New Roman', serif;">
+          We'll build it for your team.
+        </p>
+        <p class="mt-6 max-w-xl mx-auto text-gray-400 leading-relaxed">
+          RevOpsVault is free and open source. If you want help tailoring it to your team's workflow, building custom commands, or operationalizing your entire GTM knowledge base, we can help.
+        </p>
+        <a href="https://sixtysixten.com/schedule-consultation/" target="_blank" rel="noopener"
+           class="mt-8 inline-block bg-white text-black text-sm font-bold uppercase tracking-wider px-10 py-3.5 no-underline hover:bg-gray-200 transition-colors">
+          SCHEDULE A CONSULTATION
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 9. FOOTER ========== -->
+  <footer class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <!-- Small logo -->
+          <a href="https://sixtysixten.com" target="_blank" rel="noopener" class="no-underline">
+            <svg width="90" height="32" viewBox="0 0 410 140" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="20" width="100" height="100" fill="#000"></rect>
+              <text x="70" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#fff" dominant-baseline="auto">66</text>
+              <line x1="40" y1="70" x2="100" y2="70" stroke="#fff" stroke-width="2"></line>
+              <text x="70" y="82" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#fff" dominant-baseline="hanging">10</text>
+              <text x="150" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="600" letter-spacing="1" fill="#000">SIXTYSIXTEN</text>
+            </svg>
+          </a>
+          <span class="text-sm text-gray-500">Strategy and systems for revenue teams.</span>
+        </div>
+        <div class="flex items-center gap-6 text-sm text-gray-500">
+          <a href="https://github.com/marawanaziz/revvault" target="_blank" rel="noopener" class="hover:text-black transition-colors">GitHub</a>
+          <span>MIT License</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
