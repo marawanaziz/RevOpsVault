@@ -1,4 +1,4 @@
-# Obsidian GTM Vault Quickstart
+# RevVault
 
 Turn Obsidian into a structured GTM/RevOps knowledge base that makes every Claude Code interaction contextual to your business.
 
@@ -16,12 +16,25 @@ A Claude Code configuration package that scaffolds complete Obsidian vaults pre-
 ## Quick Start
 
 1. Install [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) and [Obsidian](https://obsidian.md)
-2. Clone or download this repository
-3. Open a terminal in the project directory
-4. Run `claude` to start Claude Code
-5. Type `/setup` and follow the interactive wizard
+2. Create or open your Obsidian vault folder (e.g. `~/my-vault/`)
+3. Clone RevVault into it:
+   ```bash
+   cd ~/my-vault/
+   git clone https://github.com/marawanaziz/revvault.git
+   ```
+4. Enter the clone directory:
+   ```bash
+   cd revvault
+   ```
+5. Run `claude` to start Claude Code
+6. Type `/setup` and follow the interactive wizard — the default vault path is the parent directory (your vault)
+7. After setup, delete the clone directory:
+   ```bash
+   cd ..
+   rm -rf revvault/
+   ```
 
-The wizard will ask about your business, create the vault folder structure, install all commands and templates, and optionally set up GitHub sync.
+The wizard will ask about your business, create the vault folder structure, install all commands and templates, and optionally set up GitHub sync. Once complete, the `revvault/` directory is no longer needed.
 
 ## What Gets Created
 

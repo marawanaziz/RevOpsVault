@@ -14,7 +14,7 @@ Ask the user for:
 1. **Company name** — The business this vault is for
 2. **Business type** — e.g., "B2B SaaS", "Professional Services", "E-commerce"
 3. **Primary contact** — Name and title of the main stakeholder
-4. **Vault location** — Where to create the vault (default: `~/vaults/{company-slug}`)
+4. **Vault location** — Where to create the vault (default: `../` — the parent directory, since you likely cloned RevVault into your vault folder)
 
 Wait for answers before proceeding.
 
@@ -228,3 +228,10 @@ Display a completion summary:
 5. Run /vault-health to check baseline state
 6. Run /onboard to get a guided walkthrough
 ```
+
+### Cleanup
+The `revvault/` clone directory is no longer needed — all commands, skills,
+and templates have been copied into your vault. You can safely delete it:
+
+    cd {vault_path}
+    rm -rf revvault/

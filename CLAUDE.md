@@ -1,9 +1,15 @@
-# Obsidian GTM Vault Quickstart
+# RevVault
 
 ## What This Is
 This is a Claude Code configuration package that scaffolds Obsidian vaults
 for B2B GTM/RevOps knowledge management. It is NOT a vault itself — it
 generates vaults via the `/setup` command.
+
+## Intended Workflow
+Users clone this repo into their existing Obsidian vault folder, run `/setup`,
+and the wizard copies all commands, skills, templates, and agents into the
+parent directory (the vault). The default vault path is `../` — the parent
+directory. After setup, the clone directory can be deleted.
 
 ## Entry Point
 Run `/setup` to create a new vault. The wizard handles folder creation,
