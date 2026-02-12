@@ -1,0 +1,22 @@
+filters:
+  and:
+    - 'file.inFolder("customer-success/escalations")'
+    - '!file.name.startsWith("_")'
+formulas:
+  days_since_update: '(now() - file.mtime) / "1 day"'
+properties:
+  date: { displayName: "Date" }
+  client: { displayName: "Client" }
+  severity: { displayName: "Severity" }
+  category: { displayName: "Category" }
+  owner: { displayName: "Owner" }
+  status: { displayName: "Status" }
+views:
+  - type: table
+    name: "Open Escalations"
+    filter: 'status != "closed"'
+    group_by: "severity"
+    order: [file.name, severity, client, category, owner, status, file.mtime, formula.days_since_update]
+  - type: table
+    name: "All Escalations"
+    order: [file.name, date, client, severity, category, owner, status, file.mtime]

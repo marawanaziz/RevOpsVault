@@ -4,7 +4,7 @@ Run a read-only diagnostic health check on the vault and report a health score.
 
 Do NOT create or modify any files. Only read and report.
 
-1. **Folder completeness** — Verify all expected folders exist: `/hubs/`, `/company/`, `/icp/`, `/icp/personas/`, `/icp/segments/`, `/sales/`, `/sales/calls/`, `/sales/deals/`, `/sales/sequences/`, `/automations/`, `/deliverables/`, `/deliverables/proposals/`, `/meetings/`, `/_drafts/`, `/_review/`, `/archive/`, `/company/competitors/`.
+1. **Folder completeness** — Verify all expected folders exist: `/hubs/`, `/company/`, `/icp/`, `/icp/personas/`, `/icp/segments/`, `/sales/`, `/sales/calls/`, `/sales/deals/`, `/sales/sequences/`, `/customer-success/`, `/customer-success/accounts/`, `/customer-success/interactions/`, `/customer-success/playbooks/`, `/customer-success/escalations/`, `/customer-success/expansion/`, `/customer-success/feedback/`, `/marketing/`, `/marketing/campaigns/`, `/marketing/content/`, `/marketing/leads/`, `/marketing/experiments/`, `/marketing/events/`, `/automations/`, `/deliverables/`, `/deliverables/proposals/`, `/meetings/`, `/_drafts/`, `/_review/`, `/archive/`, `/company/competitors/`.
 
 2. **Core files present** — Check for: `CLAUDE.md`, `HOME.md`, all hub notes in `/hubs/`, company files (`overview.md`, `team.md`, `tech-stack.md`, `pain-points.md`, `metrics.md`).
 
@@ -30,11 +30,16 @@ Do NOT create or modify any files. Only read and report.
 
 13. **Bases folder present** — Verify the `/bases/` directory exists.
 
-14. **Base files present** — Verify at least `pipeline-tracker.base` and `review-dashboard.base` exist in `/bases/`.
+14. **Base files present** — Verify at least `pipeline-tracker.base`, `review-dashboard.base`, `account-health.base`, `campaign-tracker.base`, `escalation-log.base`, `lead-tracker.base`, and `funnel-tracker.base` exist in `/bases/`.
 
 15. **Frontmatter compliance for Bases** — Since Bases depend on frontmatter properties, check notes in key folders for required properties:
     - `/sales/deals/` — must have `stage`, `deal-value`, `contact`
     - `/sales/calls/` — must have `date`, `type`
+    - `/customer-success/accounts/` — must have `health-score`, `mrr`, `renewal-date`
+    - `/marketing/campaigns/` — must have `channel`, `status`
+    - `/customer-success/escalations/` — must have `severity`, `category`, `status`
+    - `/customer-success/expansion/` — must have `opportunity-type`, `value`, `stage`
+    - `/marketing/leads/` — must have `source`, `qualification-status`
     - Flag any non-template files missing these properties.
 
 ## Scoring

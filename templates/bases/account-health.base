@@ -1,0 +1,24 @@
+filters:
+  and:
+    - 'file.inFolder("customer-success/accounts")'
+    - '!file.name.startsWith("_")'
+formulas:
+  days_since_update: '(now() - file.mtime) / "1 day"'
+properties:
+  health-score: { displayName: "Health Score" }
+  mrr: { displayName: "MRR" }
+  renewal-date: { displayName: "Renewal Date" }
+  csm: { displayName: "CSM" }
+  file.mtime: { displayName: "Last Updated" }
+views:
+  - type: table
+    name: "Accounts by Health"
+    group_by: "health-score"
+    order: [file.name, health-score, mrr, renewal-date, csm, file.mtime, formula.days_since_update]
+  - type: table
+    name: "All Accounts"
+    order: [file.name, health-score, mrr, renewal-date, csm, file.mtime]
+  - type: table
+    name: "Renewals Next 90 Days"
+    filter: 'renewal-date <= now() + dur("90 days")'
+    order: [renewal-date, file.name, health-score, mrr, csm]

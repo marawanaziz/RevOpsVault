@@ -34,6 +34,19 @@ Create all directories at the vault location:
 ├── sales/calls/
 ├── sales/deals/
 ├── sales/sequences/
+├── customer-success/
+├── customer-success/accounts/
+├── customer-success/interactions/
+├── customer-success/playbooks/
+├── customer-success/escalations/
+├── customer-success/expansion/
+├── customer-success/feedback/
+├── marketing/
+├── marketing/campaigns/
+├── marketing/content/
+├── marketing/leads/
+├── marketing/experiments/
+├── marketing/events/
 ├── automations/
 ├── deliverables/
 ├── deliverables/proposals/
@@ -79,6 +92,21 @@ Copy all files from this quickstart project into the new vault:
 - draft-sequence.md
 - draft-content.md
 - win-loss.md
+- log-interaction.md
+- portfolio-report.md
+- prep-qbr.md
+- churn-analysis.md
+- log-campaign.md
+- campaign-report.md
+- content-calendar.md
+- attribution-analysis.md
+- log-escalation.md
+- expansion-report.md
+- handoff-to-cs.md
+- feedback-analysis.md
+- log-lead.md
+- analyze-tests.md
+- qualify-lead.md
 
 **Skills** — Copy both skill directories:
 - `.claude/skills/obsidian-vault-patterns/SKILL.md` → `{vault_path}/.claude/skills/obsidian-vault-patterns/SKILL.md`
@@ -86,6 +114,8 @@ Copy all files from this quickstart project into the new vault:
 
 **Agents** — Copy:
 - `.claude/agents/call-processor.md` → `{vault_path}/.claude/agents/call-processor.md`
+- `.claude/agents/interaction-processor.md` → `{vault_path}/.claude/agents/interaction-processor.md`
+- `.claude/agents/campaign-processor.md` → `{vault_path}/.claude/agents/campaign-processor.md`
 
 ## Step 6 — Create Hub Notes and HOME.md
 
@@ -96,6 +126,8 @@ Read each hub template from `templates/hub-templates/` in this quickstart projec
 - `templates/hub-templates/sales-pipeline-hub.md` → `{vault_path}/hubs/sales-pipeline.md`
 - `templates/hub-templates/automations-hub.md` → `{vault_path}/hubs/automations.md`
 - `templates/hub-templates/deliverables-hub.md` → `{vault_path}/hubs/deliverables.md`
+- `templates/hub-templates/customer-success-hub.md` → `{vault_path}/hubs/customer-success.md`
+- `templates/hub-templates/marketing-hub.md` → `{vault_path}/hubs/marketing.md`
 - `templates/review-queue-hub.md` → `{vault_path}/hubs/review-queue.md`
 
 Read `templates/home-page.md`, replace `{{company_name}}`, `{{primary_contact}}`, `{{created_date}}`, and write to `{vault_path}/HOME.md`.
@@ -108,6 +140,19 @@ Read `templates/home-page.md`, replace `{{company_name}}`, `{{primary_contact}}`
 - `templates/meeting-note.md` → `{vault_path}/meetings/_meeting-template.md`
 - `templates/sequence-playbook.md` → `{vault_path}/sales/sequences/_sequence-template.md`
 - `templates/competitor-battle-card.md` → `{vault_path}/company/competitors/_battle-card-template.md`
+- `templates/account-tracker.md` → `{vault_path}/customer-success/accounts/_account-template.md`
+- `templates/interaction-note.md` → `{vault_path}/customer-success/interactions/_interaction-template.md`
+- `templates/onboarding-playbook.md` → `{vault_path}/customer-success/playbooks/_onboarding-template.md`
+- `templates/campaign-tracker.md` → `{vault_path}/marketing/campaigns/_campaign-template.md`
+- `templates/content-plan.md` → `{vault_path}/marketing/content/_content-template.md`
+- `templates/escalation-note.md` → `{vault_path}/customer-success/escalations/_escalation-template.md`
+- `templates/expansion-tracker.md` → `{vault_path}/customer-success/expansion/_expansion-template.md`
+- `templates/handoff-checklist.md` → `{vault_path}/customer-success/accounts/_handoff-template.md`
+- `templates/feedback-note.md` → `{vault_path}/customer-success/feedback/_feedback-template.md`
+- `templates/lead-tracker.md` → `{vault_path}/marketing/leads/_lead-template.md`
+- `templates/ab-test.md` → `{vault_path}/marketing/experiments/_experiment-template.md`
+- `templates/event-tracker.md` → `{vault_path}/marketing/events/_event-template.md`
+- `templates/lead-qualification.md` → `{vault_path}/marketing/leads/_qualification-criteria.md`
 
 **Company starters** — Copy into `/company/` as editable starter files (replace `{{company_name}}` and `{{date}}`):
 - `templates/company-overview.md` → `{vault_path}/company/overview.md`
@@ -126,16 +171,42 @@ Copy all `.base` files from `templates/bases/` in this quickstart project into `
 - `templates/bases/persona-matrix.base` → `{vault_path}/bases/persona-matrix.base`
 - `templates/bases/deliverables-tracker.base` → `{vault_path}/bases/deliverables-tracker.base`
 - `templates/bases/meeting-log.base` → `{vault_path}/bases/meeting-log.base`
+- `templates/bases/account-health.base` → `{vault_path}/bases/account-health.base`
+- `templates/bases/interaction-log.base` → `{vault_path}/bases/interaction-log.base`
+- `templates/bases/renewal-tracker.base` → `{vault_path}/bases/renewal-tracker.base`
+- `templates/bases/campaign-tracker.base` → `{vault_path}/bases/campaign-tracker.base`
+- `templates/bases/content-calendar.base` → `{vault_path}/bases/content-calendar.base`
+- `templates/bases/escalation-log.base` → `{vault_path}/bases/escalation-log.base`
+- `templates/bases/expansion-pipeline.base` → `{vault_path}/bases/expansion-pipeline.base`
+- `templates/bases/feedback-tracker.base` → `{vault_path}/bases/feedback-tracker.base`
+- `templates/bases/lead-tracker.base` → `{vault_path}/bases/lead-tracker.base`
+- `templates/bases/experiment-tracker.base` → `{vault_path}/bases/experiment-tracker.base`
+- `templates/bases/event-tracker.base` → `{vault_path}/bases/event-tracker.base`
+- `templates/bases/funnel-tracker.base` → `{vault_path}/bases/funnel-tracker.base`
 
 These are Obsidian Bases view configurations — they query existing notes via frontmatter and render live database views. Do NOT apply `{{variable}}` substitution to `.base` files.
 
 ## Step 9 — GitHub Integration (Optional)
 
-Ask: "Would you like to set up GitHub sync for backup and team collaboration?"
+Present three options to the user:
 
-**If yes:**
+> **How would you like to handle GitHub sync?**
+>
+> 1. **Auto-create repo (Recommended)** — Uses the `gh` CLI to create and push automatically
+> 2. **Create in browser** — Open GitHub in your browser, then paste the URL back here
+> 3. **Skip for now** — You can set up GitHub later
 
-1. Create a `.gitignore` at the vault root with:
+Wait for the user to choose before proceeding.
+
+---
+
+### Option 1 — Auto-create repo
+
+1. Check if the `gh` CLI is available by running `which gh`. If it is NOT available, tell the user:
+   > `gh` CLI not found. Install it from https://cli.github.com or pick option 2 or 3.
+   Then re-present the three options.
+
+2. Create a `.gitignore` at the vault root with:
    ```
    .obsidian/workspace.json
    .obsidian/workspace-mobile.json
@@ -143,16 +214,61 @@ Ask: "Would you like to set up GitHub sync for backup and team collaboration?"
    .DS_Store
    ```
 
-2. Check if the `gh` CLI is available by running `which gh`.
+3. Run:
+   ```
+   git init
+   gh repo create vault-{company-slug} --private --source=. --remote=origin
+   git add .
+   git commit -m "Initial vault setup"
+   git branch -M main
+   git push -u origin main
+   ```
 
-3. **If `gh` is available:** Ask if they want to create the repo automatically.
-   - If yes: Run `git init` in the vault, then `gh repo create vault-{company-slug} --private --source=. --remote=origin`
-   - Run `git add .`, `git commit -m "Initial vault setup"`, `git branch -M main`, `git push -u origin main`
+4. Display the Obsidian Git plugin configuration table (see below).
 
-4. **If `gh` is not available:** Tell them to create a private repo at https://github.com/new named `vault-{company-slug}`. Wait for them to provide the repo URL.
-   - Run `git init`, `git remote add origin {repo_url}`, `git add .`, `git commit -m "Initial vault setup"`, `git branch -M main`, `git push -u origin main`
+---
 
-5. Display the Obsidian Git plugin configuration table:
+### Option 2 — Create in browser
+
+1. Provide the user with this clickable link:
+
+   `https://github.com/new?name=vault-{company-slug}&visibility=private`
+
+   Tell them: "Create the repo on GitHub, then paste the repo URL back here."
+
+2. Wait for the user to provide the repo URL.
+
+3. Create a `.gitignore` at the vault root with:
+   ```
+   .obsidian/workspace.json
+   .obsidian/workspace-mobile.json
+   .trash/
+   .DS_Store
+   ```
+
+4. Run:
+   ```
+   git init
+   git remote add origin {repo_url}
+   git add .
+   git commit -m "Initial vault setup"
+   git branch -M main
+   git push -u origin main
+   ```
+
+5. Display the Obsidian Git plugin configuration table (see below).
+
+---
+
+### Option 3 — Skip for now
+
+Note that they can set up GitHub later and move on to the next step.
+
+---
+
+### Obsidian Git Plugin Config (Options 1 & 2)
+
+After a successful push, display this table:
 
    | Setting | Recommended Value |
    |---------|-------------------|
@@ -163,8 +279,6 @@ Ask: "Would you like to set up GitHub sync for backup and team collaboration?"
    | Push on commit-and-sync | Enabled |
    | Merge strategy | Merge |
    | Commit message template | `vault update {{date}}` |
-
-**If no:** Skip. Note that they can set up GitHub later.
 
 ## Step 10 — Plugin Guidance
 
@@ -211,14 +325,18 @@ Display a completion summary:
 - {Y} files (templates, hubs, commands, skills, agents, base views)
 - CLAUDE.md configured for {company_name}
 - HOME.md with navigation to all hubs
-- 6 Obsidian Base views in /bases/
+- 18 Obsidian Base views in /bases/
 - GitHub: {configured / not configured}
 
 ### Available Commands
 /log-call, /new-draft, /submit-for-review, /publish,
 /weekly-recap, /analyze-objections, /vault-health,
 /prep-call, /onboard, /pipeline-report, /draft-sequence,
-/draft-content, /win-loss
+/draft-content, /win-loss, /log-interaction, /portfolio-report,
+/prep-qbr, /churn-analysis, /log-campaign, /campaign-report,
+/content-calendar, /attribution-analysis, /log-escalation,
+/expansion-report, /handoff-to-cs, /feedback-analysis,
+/log-lead, /analyze-tests, /qualify-lead
 
 ### Suggested First Actions
 1. Open the vault folder in Obsidian

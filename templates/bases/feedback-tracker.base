@@ -1,0 +1,18 @@
+filters:
+  and:
+    - 'file.inFolder("customer-success/feedback")'
+    - '!file.name.startsWith("_")'
+properties:
+  date: { displayName: "Date" }
+  client: { displayName: "Client" }
+  feedback-type: { displayName: "Type" }
+  score: { displayName: "Score" }
+  sentiment: { displayName: "Sentiment" }
+views:
+  - type: table
+    name: "Recent Feedback"
+    order: [date, file.name, client, feedback-type, score, sentiment]
+  - type: table
+    name: "Feedback by Sentiment"
+    group_by: "sentiment"
+    order: [file.name, date, client, feedback-type, score, sentiment]

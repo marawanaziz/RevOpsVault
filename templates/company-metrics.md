@@ -29,6 +29,18 @@ related:
 | Sales Cycle Length | | | |
 | Conversion Rate (Lead to Opp) | | | |
 
+## Customer Success Metrics
+| Metric | Current | Target | Notes |
+|--------|---------|--------|-------|
+| Net Revenue Retention (NRR) | | | |
+| Gross Churn Rate | | | |
+| Logo Churn Rate | | | |
+| CSAT / NPS | | | |
+| Time to Value | | | |
+| Feature Adoption Rate | | | |
+| CSM:Account Ratio | | | |
+| Expansion Revenue | | | |
+
 ## Marketing Metrics
 | Metric | Current | Target | Notes |
 |--------|---------|--------|-------|

@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'file.inFolder("customer-success/interactions")'
+    - '!file.name.startsWith("_")'
+formulas:
+  age: '(now() - date) / "1 day"'
+properties:
+  date: { displayName: "Date" }
+  type: { displayName: "Type" }
+  client: { displayName: "Client" }
+  health-score: { displayName: "Health Score" }
+  status: { displayName: "Status" }
+views:
+  - type: table
+    name: "Recent Interactions"
+    order: [date, file.name, type, client, health-score, status]

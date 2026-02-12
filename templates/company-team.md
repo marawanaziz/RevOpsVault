@@ -21,6 +21,11 @@ related:
 |------|-------|-----------------|-------|
 | | | | |
 
+## Customer Success Team
+| Name | Title | Portfolio/Focus | Notes |
+|------|-------|-----------------|-------|
+| | | | |
+
 ## Marketing Team
 | Name | Title | Focus Area | Notes |
 |------|-------|------------|-------|

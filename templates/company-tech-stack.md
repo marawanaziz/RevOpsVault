@@ -22,6 +22,11 @@ related:
 |------|---------|-------|-------|
 | | | | |
 
+## Customer Success Platform
+| Tool | Purpose | Owner | Notes |
+|------|---------|-------|-------|
+| | | | |
+
 ## Marketing Automation
 | Tool | Purpose | Owner | Notes |
 |------|---------|-------|-------|

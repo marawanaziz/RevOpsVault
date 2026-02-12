@@ -44,6 +44,20 @@ related:
 ## Pricing Comparison
 <!-- If known — their pricing vs ours -->
 
+## Customer Retention Risk
+<!-- Post-sale competitive factors — how likely are customers to switch? -->
+- **Migration triggers:**
+- **Their post-sale advantages:**
+- **Our retention differentiators:**
+- **At-risk account signals:**
+
+## Marketing Positioning
+<!-- Their messaging strategy and counter-positioning angles -->
+- **Their core narrative:**
+- **Their content strategy:**
+- **Counter-positioning angles for our campaigns:**
+- **Messaging gaps we can exploit:**
+
 ## Connections
 <!-- Wiki-links to related vault documents -->
 - [[]] — deals where this competitor appeared

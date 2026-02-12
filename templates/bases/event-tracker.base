@@ -1,0 +1,19 @@
+filters:
+  and:
+    - 'file.inFolder("marketing/events")'
+    - '!file.name.startsWith("_")'
+properties:
+  event-name: { displayName: "Event" }
+  event-type: { displayName: "Type" }
+  date: { displayName: "Date" }
+  status: { displayName: "Status" }
+  attendee-count: { displayName: "Attendees" }
+  budget: { displayName: "Budget" }
+views:
+  - type: table
+    name: "Upcoming Events"
+    filter: 'status != "completed"'
+    order: [date, file.name, event-name, event-type, status, attendee-count, budget]
+  - type: table
+    name: "All Events"
+    order: [file.name, event-name, event-type, date, status, attendee-count, budget]

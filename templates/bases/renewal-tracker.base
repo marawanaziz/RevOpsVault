@@ -1,0 +1,16 @@
+filters:
+  and:
+    - 'file.inFolder("customer-success/accounts")'
+    - '!file.name.startsWith("_")'
+    - 'renewal-date <= now() + dur("90 days")'
+formulas:
+  days_until_renewal: '(renewal-date - now()) / "1 day"'
+properties:
+  renewal-date: { displayName: "Renewal Date" }
+  client: { displayName: "Client" }
+  mrr: { displayName: "MRR" }
+  health-score: { displayName: "Health Score" }
+views:
+  - type: table
+    name: "Upcoming Renewals"
+    order: [renewal-date, file.name, client, mrr, health-score, formula.days_until_renewal]

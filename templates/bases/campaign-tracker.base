@@ -1,0 +1,21 @@
+filters:
+  and:
+    - 'file.inFolder("marketing/campaigns")'
+    - '!file.name.startsWith("_")'
+formulas:
+  days_since_update: '(now() - file.mtime) / "1 day"'
+properties:
+  channel: { displayName: "Channel" }
+  status: { displayName: "Status" }
+  budget: { displayName: "Budget" }
+  target-persona: { displayName: "Target Persona" }
+  start-date: { displayName: "Start Date" }
+  file.mtime: { displayName: "Last Updated" }
+views:
+  - type: table
+    name: "Campaigns by Channel"
+    group_by: "channel"
+    order: [file.name, channel, status, budget, target-persona, start-date, file.mtime, formula.days_since_update]
+  - type: table
+    name: "All Campaigns"
+    order: [file.name, channel, status, budget, target-persona, start-date, file.mtime]

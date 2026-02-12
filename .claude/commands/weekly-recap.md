@@ -5,6 +5,16 @@ Generate a weekly activity summary from vault content created or modified in the
 1. **Scan the vault for recent activity.** Read all files in these directories and check `created:` and `last-modified:` frontmatter dates for the last 7 days:
    - `/sales/calls/` — recent call notes
    - `/sales/deals/` — deal updates or new deals
+   - `/customer-success/interactions/` — recent interactions
+   - `/customer-success/accounts/` — account health changes
+   - `/customer-success/escalations/` — new/resolved escalations
+   - `/customer-success/expansion/` — expansion pipeline changes
+   - `/customer-success/feedback/` — new feedback entries
+   - `/marketing/campaigns/` — campaign updates
+   - `/marketing/content/` — content activity
+   - `/marketing/leads/` — new leads
+   - `/marketing/experiments/` — experiment results
+   - `/marketing/events/` — event outcomes
    - `/meetings/` — meeting notes
    - `/deliverables/` — published deliverables
    - `/_drafts/` — new or updated drafts
@@ -15,6 +25,8 @@ Generate a weekly activity summary from vault content created or modified in the
    - **Summary** — 2-3 sentence overview of the week's activity
    - **Calls & Meetings** — List of all calls and meetings with one-line summaries
    - **Pipeline Movement** — New deals, stage changes, closed deals
+   - **Customer Success Activity** — New interactions, health changes, renewals approaching, escalation status, expansion pipeline movement, feedback highlights
+   - **Marketing Activity** — Campaign launches/completions, content published, new leads, experiment results, event outcomes
    - **Published Documents** — Anything promoted from review to canonical this week
    - **Review Queue** — Current items awaiting review
    - **Open Action Items** — Aggregate unchecked `- [ ]` items from this week's call notes and meeting notes

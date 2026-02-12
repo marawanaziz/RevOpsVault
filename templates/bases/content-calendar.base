@@ -1,0 +1,20 @@
+filters:
+  and:
+    - 'file.inFolder("marketing/content")'
+    - '!file.name.startsWith("_")'
+formulas:
+  days_since_update: '(now() - file.mtime) / "1 day"'
+properties:
+  content-type: { displayName: "Content Type" }
+  status: { displayName: "Status" }
+  target-persona: { displayName: "Target Persona" }
+  created: { displayName: "Created" }
+  file.mtime: { displayName: "Last Updated" }
+views:
+  - type: table
+    name: "Content Pipeline"
+    group_by: "status"
+    order: [file.name, content-type, status, target-persona, created, file.mtime, formula.days_since_update]
+  - type: table
+    name: "All Content"
+    order: [file.name, content-type, status, target-persona, created, file.mtime]

@@ -1,0 +1,18 @@
+filters:
+  and:
+    - 'file.inFolder("marketing/experiments")'
+    - '!file.name.startsWith("_")'
+properties:
+  test-name: { displayName: "Test Name" }
+  channel: { displayName: "Channel" }
+  status: { displayName: "Status" }
+  winner: { displayName: "Winner" }
+  start-date: { displayName: "Start Date" }
+views:
+  - type: table
+    name: "Active Experiments"
+    filter: 'status = "running"'
+    order: [file.name, test-name, channel, status, winner, start-date]
+  - type: table
+    name: "All Experiments"
+    order: [file.name, test-name, channel, status, winner, start-date]

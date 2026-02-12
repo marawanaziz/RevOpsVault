@@ -17,6 +17,17 @@ operational data stored as markdown. It is NOT a codebase.
 - /sales/calls/ — Individual call notes (one file per call)
 - /sales/deals/ — Deal tracking documents
 - /sales/sequences/ — Outbound email sequences
+- /customer-success/accounts/ — Customer account tracking (one file per account)
+- /customer-success/interactions/ — QBRs, onboarding calls, escalations, check-ins
+- /customer-success/playbooks/ — Onboarding and engagement playbooks
+- /customer-success/escalations/ — Customer escalation records
+- /customer-success/expansion/ — Upsell and cross-sell opportunity tracking
+- /customer-success/feedback/ — NPS surveys, CSAT, customer feedback
+- /marketing/campaigns/ — Campaign tracking documents
+- /marketing/content/ — Content plans and briefs
+- /marketing/leads/ — Lead tracking and qualification
+- /marketing/experiments/ — A/B tests and experiment tracking
+- /marketing/events/ — Event management and outcomes
 - /automations/ — Workflow specs and logic documents
 - /deliverables/ — Reports, proposals (/deliverables/proposals/), assessments
 - /meetings/ — Internal sync notes and weekly recaps
@@ -28,8 +39,9 @@ operational data stored as markdown. It is NOT a codebase.
   draft content when answering questions about the business.
 - Documents in /_review/ are pending approval. Treat as informational
   but flag that they are unconfirmed.
-- Only documents in the core folders (/company, /icp, /sales, etc.)
-  are canonical and should be used for analysis and reporting.
+- Only documents in the core folders (/company, /icp, /sales,
+  /customer-success, /marketing, etc.) are canonical and should be
+  used for analysis and reporting.
 - When promoting a draft: move the file to its canonical location,
   update all wiki-links, and update the relevant hub.
 
@@ -47,6 +59,10 @@ operational data stored as markdown. It is NOT a codebase.
   action items (with checkboxes), and deal stage signals
 - Keep summaries concise. Raw transcripts go under a ## Raw Transcript heading
 - When asked to analyze patterns across calls, read ALL files in /sales/calls/
+- When analyzing CS patterns, read ALL files in /customer-success/interactions/
+- When analyzing customer feedback patterns, read ALL files in /customer-success/feedback/
+- When analyzing campaign performance, read ALL files in /marketing/campaigns/
+- When analyzing lead flow, read ALL files in /marketing/leads/
 - When creating any document, search the vault for related content and add
   wiki-links in the ## Connections section and related: frontmatter
 - Tags are lowercase and hyphenated (e.g., sales-call, icp-update)
