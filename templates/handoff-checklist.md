@@ -12,6 +12,9 @@ author: {{author}}
 tags: [handoff, customer-success]
 related:
   - "[[]]"
+  - "[[sales-pipeline]]"
+  - "[[customer-success]]"
+  - "[[icp-and-personas]]"
 ---
 
 # Sales-to-CS Handoff: {{client}}
@@ -55,6 +58,9 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[sales-pipeline]] — deal origin and sales context
+- [[customer-success]] — account destination and CS onboarding
+- [[icp-and-personas]] — persona context for handoff
 - [[]] — deal file
 - [[]] — account file
 - [[]] — most recent call note

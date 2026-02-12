@@ -37,3 +37,9 @@ Generate an expansion pipeline summary from all opportunity files in the vault.
    - Display inline only (default)
    - Save as a deliverable in `/deliverables/`
    - Save as a draft in `/_drafts/`
+
+8. **Populate `## Connections`** with links to every expansion opportunity analyzed, plus `[[deliverables]]` and `[[customer-success]]`.
+
+9. **Update hubs.** If the report was saved (not displayed inline only):
+   - Add a wiki-link to `/hubs/deliverables.md` under `## Reports & Assessments` with the report title and today's date.
+   - Add a wiki-link to `/hubs/customer-success.md` under `## Recent Reports` (create the section if it doesn't exist).

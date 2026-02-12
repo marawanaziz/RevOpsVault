@@ -7,6 +7,8 @@ target-segment: "{{segment}}"
 tags: [playbook, onboarding, customer-success]
 related:
   - "[[]]"
+  - "[[customer-success]]"
+  - "[[icp-and-personas]]"
 ---
 
 # Onboarding Playbook: {{playbook_name}}
@@ -70,3 +72,5 @@ related:
 <!-- Wiki-links to related vault documents -->
 - [[]] — target segment definition
 - [[]] — related account
+- [[customer-success]] — parent hub for onboarding playbooks
+- [[icp-and-personas]] — onboarding varies by customer segment and persona

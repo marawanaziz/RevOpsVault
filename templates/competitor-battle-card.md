@@ -8,6 +8,8 @@ author: {{author}}
 tags: [competitor, competitive-intel]
 related:
   - "[[]]"
+  - "[[business-context]]"
+  - "[[sales-pipeline]]"
 ---
 
 # Battle Card: {{competitor}}
@@ -62,3 +64,5 @@ related:
 <!-- Wiki-links to related vault documents -->
 - [[]] — deals where this competitor appeared
 - [[]] — call notes mentioning this competitor
+- [[business-context]] — parent hub for competitive intelligence
+- [[sales-pipeline]] — used in deal positioning against this competitor

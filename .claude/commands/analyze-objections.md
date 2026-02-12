@@ -29,4 +29,8 @@ Analyze objection patterns across all sales call notes in the vault.
    - Save as a deliverable in `/deliverables/` (published, for sharing)
    - Save as a draft in `/_drafts/` (for internal iteration)
 
-7. **Link to sources.** In `## Connections`, link to every call note referenced in the analysis.
+7. **Link to sources.** In `## Connections`, link to every call note referenced in the analysis, plus `[[deliverables]]` and `[[sales-pipeline]]`.
+
+8. **Update hubs.** If the report was saved (not displayed inline only):
+   - Add a wiki-link to `/hubs/deliverables.md` under `## Analysis & Insights` with the report title and today's date.
+   - Add a wiki-link to `/hubs/sales-pipeline.md` under `## Recent Reports` (create the section if it doesn't exist).

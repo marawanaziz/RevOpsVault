@@ -37,3 +37,9 @@ Generate a marketing campaign performance report from all campaign files in the 
    - Display inline only (default)
    - Save as a deliverable in `/deliverables/`
    - Save as a draft in `/_drafts/`
+
+9. **Populate `## Connections`** with links to every campaign file analyzed, plus `[[deliverables]]` and `[[marketing]]`.
+
+10. **Update hubs.** If the report was saved (not displayed inline only):
+   - Add a wiki-link to `/hubs/deliverables.md` under `## Reports & Assessments` with the report title and today's date.
+   - Add a wiki-link to `/hubs/marketing.md` under `## Recent Reports` (create the section if it doesn't exist).

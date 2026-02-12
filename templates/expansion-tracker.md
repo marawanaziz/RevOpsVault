@@ -12,6 +12,8 @@ author: {{author}}
 tags: [expansion, customer-success]
 related:
   - "[[]]"
+  - "[[customer-success]]"
+  - "[[sales-pipeline]]"
 ---
 
 # Expansion: {{client}} — {{title}}
@@ -51,6 +53,8 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[customer-success]] — parent hub for expansion opportunities
+- [[sales-pipeline]] — expansion deals are pipeline
 - [[]] — related account file
 - [[]] — matching persona
 - [[]] — recent interaction note

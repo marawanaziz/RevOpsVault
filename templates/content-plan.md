@@ -8,6 +8,7 @@ target-persona: "{{persona}}"
 tags: [content, marketing]
 related:
   - "[[]]"
+  - "[[marketing]]"
 ---
 
 # Content: {{content_title}}
@@ -50,3 +51,4 @@ related:
 <!-- Wiki-links to related vault documents -->
 - [[]] — target persona definition
 - [[]] — related campaign
+- [[marketing]] — parent hub for content planning

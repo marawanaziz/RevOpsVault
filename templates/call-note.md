@@ -12,6 +12,7 @@ author: {{author}}
 tags: [call, sales]
 related:
   - "[[]]"
+  - "[[sales-pipeline]]"
 ---
 
 # Call: {{title}}
@@ -42,5 +43,6 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[sales-pipeline]] — parent hub for sales calls
 - [[]] — related deal file
 - [[]] — matching persona

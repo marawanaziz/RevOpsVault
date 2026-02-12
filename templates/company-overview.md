@@ -10,6 +10,7 @@ related:
   - "[[pain-points]]"
   - "[[metrics]]"
   - "[[business-context]]"
+  - "[[icp-and-personas]]"
 ---
 
 # Company Overview — {{company_name}}
@@ -50,3 +51,4 @@ related:
 - [[pain-points]] — detailed problem areas
 - [[metrics]] — KPIs and performance data
 - [[business-context]] — hub for all company context
+- [[icp-and-personas]] — who the company sells to

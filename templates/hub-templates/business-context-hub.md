@@ -3,6 +3,11 @@ status: published
 created: {{date}}
 last-modified: {{date}}
 tags: [hub, business-context]
+related:
+  - "[[icp-and-personas]]"
+  - "[[sales-pipeline]]"
+  - "[[marketing]]"
+  - "[[customer-success]]"
 ---
 
 # Business Context
@@ -20,6 +25,12 @@ Everything about {{company_name}} — who they are, how they operate, and what t
 
 ## Competitive Landscape
 <!-- Links to competitor battle cards in /company/competitors/ -->
+
+## Connections
+- [[icp-and-personas]] — who the company sells to, informed by business context
+- [[sales-pipeline]] — active deals and revenue generation
+- [[marketing]] — campaigns and demand generation strategy
+- [[customer-success]] — post-sale account management and retention
 
 ## Recent Changes
 <!-- Notable updates to company context documents -->

@@ -3,6 +3,11 @@ status: published
 created: {{date}}
 last-modified: {{date}}
 tags: [hub, customer-success, accounts]
+related:
+  - "[[sales-pipeline]]"
+  - "[[icp-and-personas]]"
+  - "[[marketing]]"
+  - "[[business-context]]"
 ---
 
 # Customer Success
@@ -41,6 +46,12 @@ Account health, interactions, renewals, and onboarding for {{company_name}}.
 
 ## Recent Feedback
 <!-- Links to recent NPS/feedback entries in /customer-success/feedback/ -->
+
+## Connections
+- [[sales-pipeline]] — accounts originate from closed deals
+- [[icp-and-personas]] — accounts segmented by persona for engagement strategy
+- [[marketing]] — retention campaigns, feedback loops, and case studies
+- [[business-context]] — company context informing account strategy
 
 ## Recent Changes
 <!-- Notable health changes, new accounts, escalations -->

@@ -37,4 +37,8 @@ Analyze patterns across closed deals to identify what drives wins and losses.
    - Save as a draft in `/_drafts/` (for iteration)
    - Display inline only
 
-8. **Populate `## Connections`** with links to every deal file and call note analyzed.
+8. **Populate `## Connections`** with links to every deal file and call note analyzed, plus `[[deliverables]]` and `[[sales-pipeline]]`.
+
+9. **Update hubs.** If the report was saved (not displayed inline only):
+   - Add a wiki-link to `/hubs/deliverables.md` under `## Analysis & Insights` with the report title and today's date.
+   - Add a wiki-link to `/hubs/sales-pipeline.md` under `## Recent Reports` (create the section if it doesn't exist).

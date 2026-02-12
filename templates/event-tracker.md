@@ -12,6 +12,8 @@ author: {{author}}
 tags: [event, marketing]
 related:
   - "[[]]"
+  - "[[marketing]]"
+  - "[[icp-and-personas]]"
 ---
 
 # Event: {{event_name}}
@@ -66,6 +68,8 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[marketing]] — parent hub for events
+- [[icp-and-personas]] — events target specific personas
 - [[]] — related campaign
 - [[]] — leads generated
 - [[]] — follow-up content

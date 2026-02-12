@@ -44,3 +44,9 @@ Generate a customer portfolio summary report from all account files in the vault
    - Display inline only (default)
    - Save as a deliverable in `/deliverables/`
    - Save as a draft in `/_drafts/`
+
+10. **Populate `## Connections`** with links to every account file and interaction note analyzed, plus `[[deliverables]]` and `[[customer-success]]`.
+
+11. **Update hubs.** If the report was saved (not displayed inline only):
+   - Add a wiki-link to `/hubs/deliverables.md` under `## Reports & Assessments` with the report title and today's date.
+   - Add a wiki-link to `/hubs/customer-success.md` under `## Recent Reports` (create the section if it doesn't exist).

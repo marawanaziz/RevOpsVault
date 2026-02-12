@@ -8,6 +8,9 @@ related:
   - "[[overview]]"
   - "[[pain-points]]"
   - "[[business-context]]"
+  - "[[sales-pipeline]]"
+  - "[[customer-success]]"
+  - "[[marketing]]"
 ---
 
 # Key Metrics — {{company_name}}
@@ -63,3 +66,6 @@ related:
 - [[overview]] — company overview
 - [[pain-points]] — problems affecting these numbers
 - [[business-context]] — hub for all company context
+- [[sales-pipeline]] — pipeline and revenue metrics
+- [[customer-success]] — retention, NRR, and health metrics
+- [[marketing]] — MQL, SQL, CAC, and campaign metrics

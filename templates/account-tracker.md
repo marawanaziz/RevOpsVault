@@ -12,6 +12,8 @@ author: {{author}}
 tags: [account, customer-success]
 related:
   - "[[]]"
+  - "[[customer-success]]"
+  - "[[sales-pipeline]]"
 ---
 
 # Account: {{client}}
@@ -50,5 +52,7 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[customer-success]] — parent hub for accounts
+- [[sales-pipeline]] — account originated from closed deal
 - [[]] — primary persona match
 - [[]] — most recent interaction note

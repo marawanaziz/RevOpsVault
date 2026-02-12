@@ -44,6 +44,16 @@ Additional fields by document type:
   - Hub notes that should reference this document
 - When a document is referenced by another, **consider adding a backlink** from the target document's `## Connections` section.
 - Hub notes are the high-connectivity nodes — individual documents connect laterally to peers.
+- **Every document saved to a canonical folder must link to its parent hub.** The parent hub mapping:
+  - `/sales/*` → `[[sales-pipeline]]`
+  - `/customer-success/*` → `[[customer-success]]`
+  - `/marketing/*` → `[[marketing]]`
+  - `/company/*` → `[[business-context]]`
+  - `/icp/*` → `[[icp-and-personas]]`
+  - `/deliverables/*` → `[[deliverables]]`
+  - `/automations/*` → `[[automations]]`
+  - `/meetings/*` → no hub required (aggregated by `/weekly-recap`)
+- **When creating a document that links to a hub, also add a backlink from the hub** under the appropriate section.
 
 ## Connections Section
 
@@ -64,6 +74,14 @@ Hub notes in `/hubs/` follow this structure:
 3. **Recent Changes** — section at the bottom tracking notable updates
 
 Hub notes are navigation dashboards. They do not contain analysis or original content.
+
+Hub notes must link to other hubs they have logical relationships with in a `## Connections` section. The hub interconnection map:
+- `[[business-context]]` ↔ all operational hubs (company context informs everything)
+- `[[icp-and-personas]]` ↔ `[[sales-pipeline]]`, `[[marketing]]`, `[[customer-success]]` (personas drive targeting)
+- `[[sales-pipeline]]` ↔ `[[marketing]]` (lead source and attribution), `[[customer-success]]` (deal handoff)
+- `[[marketing]]` ↔ `[[customer-success]]` (retention campaigns, feedback loops)
+- `[[automations]]` ↔ all operational hubs (workflows power each function)
+- `[[deliverables]]` ↔ all operational hubs (reports generated from each)
 
 ## HOME.md Pattern
 

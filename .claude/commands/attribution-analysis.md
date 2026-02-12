@@ -33,4 +33,8 @@ Analyze marketing attribution by tracing pipeline back to marketing touchpoints.
    - Save as a draft in `/_drafts/` (for iteration)
    - Display inline only
 
-8. **Populate `## Connections`** with links to every campaign, content piece, and deal file analyzed.
+8. **Populate `## Connections`** with links to every campaign, content piece, and deal file analyzed, plus `[[deliverables]]` and `[[marketing]]`.
+
+9. **Update hubs.** If the report was saved (not displayed inline only):
+   - Add a wiki-link to `/hubs/deliverables.md` under `## Analysis & Insights` with the report title and today's date.
+   - Add a wiki-link to `/hubs/marketing.md` under `## Recent Reports` (create the section if it doesn't exist).

@@ -40,4 +40,8 @@ Analyze patterns across customer accounts to identify churn signals and retentio
    - Save as a draft in `/_drafts/` (for iteration)
    - Display inline only
 
-8. **Populate `## Connections`** with links to every account file and interaction note analyzed.
+8. **Populate `## Connections`** with links to every account file and interaction note analyzed, plus `[[deliverables]]` and `[[customer-success]]`.
+
+9. **Update hubs.** If the report was saved (not displayed inline only):
+   - Add a wiki-link to `/hubs/deliverables.md` under `## Analysis & Insights` with the report title and today's date.
+   - Add a wiki-link to `/hubs/customer-success.md` under `## Recent Reports` (create the section if it doesn't exist).

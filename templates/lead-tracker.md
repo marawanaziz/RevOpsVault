@@ -14,6 +14,9 @@ author: {{author}}
 tags: [lead, marketing]
 related:
   - "[[]]"
+  - "[[marketing]]"
+  - "[[icp-and-personas]]"
+  - "[[sales-pipeline]]"
 ---
 
 # Lead: {{lead_name}} — {{company}}
@@ -46,6 +49,9 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[marketing]] — parent hub for lead tracking
+- [[icp-and-personas]] — leads scored against ICP criteria
+- [[sales-pipeline]] — SQLs handed off to sales pipeline
 - [[]] — campaign source
 - [[]] — matching persona
 - [[]] — ICP match

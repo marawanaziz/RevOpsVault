@@ -7,6 +7,7 @@ tags: [company, team]
 related:
   - "[[overview]]"
   - "[[business-context]]"
+  - "[[customer-success]]"
 ---
 
 # Team — {{company_name}}
@@ -46,3 +47,4 @@ related:
 ## Connections
 - [[overview]] — company overview
 - [[business-context]] — hub for all company context
+- [[customer-success]] — CSM assignments and team structure

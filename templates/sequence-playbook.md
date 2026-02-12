@@ -7,6 +7,8 @@ target-persona: "{{persona}}"
 tags: [sequence, outreach]
 related:
   - "[[]]"
+  - "[[sales-pipeline]]"
+  - "[[icp-and-personas]]"
 ---
 
 # Sequence: {{sequence_name}}
@@ -52,3 +54,5 @@ related:
 - [[]] — target persona definition
 - [[]] — ICP this sequence targets
 - [[]] — related deal or campaign
+- [[sales-pipeline]] — parent hub for sales sequences
+- [[icp-and-personas]] — sequences target specific personas

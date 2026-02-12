@@ -11,6 +11,8 @@ author: {{author}}
 tags: [deal, sales]
 related:
   - "[[]]"
+  - "[[sales-pipeline]]"
+  - "[[icp-and-personas]]"
 ---
 
 # Deal: {{title}}
@@ -44,5 +46,7 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[sales-pipeline]] — parent hub for all deals
+- [[icp-and-personas]] — deals matched against ICP and persona criteria
 - [[]] — primary persona match
 - [[]] — most recent call note

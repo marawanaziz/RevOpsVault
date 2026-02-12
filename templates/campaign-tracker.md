@@ -12,6 +12,9 @@ author: {{author}}
 tags: [campaign, marketing]
 related:
   - "[[]]"
+  - "[[marketing]]"
+  - "[[sales-pipeline]]"
+  - "[[icp-and-personas]]"
 ---
 
 # Campaign: {{campaign_name}}
@@ -55,5 +58,8 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[marketing]] — parent hub for campaigns
+- [[sales-pipeline]] — pipeline influenced by this campaign
+- [[icp-and-personas]] — campaign targets specific personas
 - [[]] — target persona definition
 - [[]] — related content pieces

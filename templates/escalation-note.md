@@ -11,6 +11,7 @@ author: {{author}}
 tags: [escalation, customer-success]
 related:
   - "[[]]"
+  - "[[customer-success]]"
 ---
 
 # Escalation: {{title}}
@@ -42,6 +43,7 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[customer-success]] — parent hub for escalations
 - [[]] — related account file
 - [[]] — recent interaction notes
 - [[]] — matching persona

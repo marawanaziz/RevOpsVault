@@ -279,3 +279,13 @@ Event tracker rules:
 - Frontmatter must include `date:` — event date
 - Frontmatter must include `status:` with one of: planning, confirmed, completed, cancelled
 - Always link to related campaigns and leads generated
+
+## Cross-Domain Linking Standards
+
+When creating documents that reference content in another domain, add a wiki-link to that domain's hub:
+- A deal that references marketing campaigns → include `[[marketing]]` in Connections
+- A campaign that tracks pipeline influenced → include `[[sales-pipeline]]` in Connections
+- An expansion opportunity → include `[[sales-pipeline]]` in Connections (expansion is pipeline)
+- An account that originated from a deal → include `[[sales-pipeline]]` in Connections
+- A lead scored against ICP → include `[[icp-and-personas]]` in Connections
+- Any document referencing company context docs → include `[[business-context]]` in Connections

@@ -8,6 +8,7 @@ related:
   - "[[overview]]"
   - "[[metrics]]"
   - "[[business-context]]"
+  - "[[tech-stack]]"
 ---
 
 # Pain Points — {{company_name}}
@@ -48,3 +49,4 @@ related:
 - [[overview]] — company overview
 - [[metrics]] — KPIs affected by these pain points
 - [[business-context]] — hub for all company context
+- [[tech-stack]] — technology-related pain points and tool gaps

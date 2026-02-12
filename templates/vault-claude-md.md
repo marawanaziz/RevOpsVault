@@ -52,6 +52,8 @@ operational data stored as markdown. It is NOT a codebase.
 - File names: YYYY-MM-DD-descriptive-slug.md for dated items
 - After creating/updating notes, update the relevant hub in /hubs/
 - Populate the ## Connections section with contextual wiki-links
+- Link to the parent hub for the document's folder (see /hubs/ for the hub list)
+- When referencing content from another domain, also link to that domain's hub
 
 ## Important Rules
 - Never delete existing notes. Archive by moving to /archive/ with a date suffix

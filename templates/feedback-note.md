@@ -11,6 +11,7 @@ author: {{author}}
 tags: [feedback, customer-success]
 related:
   - "[[]]"
+  - "[[customer-success]]"
 ---
 
 # Feedback: {{client}} — {{title}}
@@ -39,6 +40,7 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[customer-success]] — parent hub for customer feedback
 - [[]] — related account file
 - [[]] — recent interaction notes
 - [[]] — matching persona

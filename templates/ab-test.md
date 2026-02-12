@@ -12,6 +12,7 @@ author: {{author}}
 tags: [experiment, marketing]
 related:
   - "[[]]"
+  - "[[marketing]]"
 ---
 
 # Experiment: {{test_name}}
@@ -44,5 +45,6 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[marketing]] — parent hub for experiments
 - [[]] — related campaign
 - [[]] — target persona

@@ -12,6 +12,7 @@ author: {{author}}
 tags: [interaction, customer-success]
 related:
   - "[[]]"
+  - "[[customer-success]]"
 ---
 
 # Interaction: {{title}}
@@ -42,5 +43,6 @@ related:
 
 ## Connections
 <!-- Wiki-links to related vault documents -->
+- [[customer-success]] — parent hub for interactions
 - [[]] — related account file
 - [[]] — matching persona
