@@ -1,0 +1,7 @@
+<svg width="281" height="63" viewBox="0 0 640 140" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="20" width="100" height="100" fill="#000"></rect>
+  <text x="70" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#fff" dominant-baseline="auto">66</text>
+  <line x1="40" y1="70" x2="100" y2="70" stroke="#fff" stroke-width="2"></line>
+  <text x="70" y="82" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#fff" dominant-baseline="hanging">10</text>
+  <text x="150" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="600" letter-spacing="1" fill="#000">SIXTYSIXTEN</text>
+</svg>
