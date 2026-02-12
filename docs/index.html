@@ -312,7 +312,10 @@
               <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">1</span>
               <h3 class="font-bold text-sm uppercase tracking-wider">Create your vault folder</h3>
             </div>
-            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> mkdir ~/my-vault &amp;&amp; cd ~/my-vault</code></pre>
+            <div class="relative group">
+              <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> mkdir ~/my-vault &amp;&amp; cd ~/my-vault</code></pre>
+              <button class="copy-btn" data-copy="mkdir ~/my-vault && cd ~/my-vault">COPY</button>
+            </div>
           </div>
 
           <!-- Step 2 -->
@@ -321,7 +324,10 @@
               <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">2</span>
               <h3 class="font-bold text-sm uppercase tracking-wider">Clone RevOps Vault</h3>
             </div>
-            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> git clone https://github.com/marawanaziz/revopsvault.git</code></pre>
+            <div class="relative group">
+              <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> git clone https://github.com/marawanaziz/revopsvault.git</code></pre>
+              <button class="copy-btn" data-copy="git clone https://github.com/marawanaziz/revopsvault.git">COPY</button>
+            </div>
           </div>
 
           <!-- Step 3 -->
@@ -330,7 +336,10 @@
               <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">3</span>
               <h3 class="font-bold text-sm uppercase tracking-wider">Enter the directory</h3>
             </div>
-            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> cd revopsvault</code></pre>
+            <div class="relative group">
+              <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> cd revopsvault</code></pre>
+              <button class="copy-btn" data-copy="cd revopsvault">COPY</button>
+            </div>
           </div>
 
           <!-- Step 4 -->
@@ -339,7 +348,10 @@
               <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">4</span>
               <h3 class="font-bold text-sm uppercase tracking-wider">Start Claude Code</h3>
             </div>
-            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> claude</code></pre>
+            <div class="relative group">
+              <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> claude</code></pre>
+              <button class="copy-btn" data-copy="claude">COPY</button>
+            </div>
           </div>
 
           <!-- Step 5 -->
@@ -348,7 +360,10 @@
               <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">5</span>
               <h3 class="font-bold text-sm uppercase tracking-wider">Run the setup wizard</h3>
             </div>
-            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">&gt;</span> /setup</code></pre>
+            <div class="relative group">
+              <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">&gt;</span> /setup</code></pre>
+              <button class="copy-btn" data-copy="/setup">COPY</button>
+            </div>
             <p class="mt-3 text-sm text-gray-500">The wizard asks about your business, creates the full vault structure, installs all 28 commands, generates a CLAUDE.md tailored to your company, and deploys 18 database views.</p>
           </div>
 
@@ -358,7 +373,10 @@
               <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">6</span>
               <h3 class="font-bold text-sm uppercase tracking-wider">Cleanup the clone</h3>
             </div>
-            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> cd .. &amp;&amp; rm -rf revopsvault/</code></pre>
+            <div class="relative group">
+              <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> cd .. &amp;&amp; rm -rf revopsvault/</code></pre>
+              <button class="copy-btn" data-copy="cd .. && rm -rf revopsvault/">COPY</button>
+            </div>
           </div>
 
           <!-- Step 7 -->
@@ -367,10 +385,13 @@
               <span class="inline-flex items-center justify-center w-7 h-7 bg-gray-200 text-xs font-bold">7</span>
               <h3 class="font-bold text-sm uppercase tracking-wider">Start using your vault</h3>
             </div>
-            <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> cd ~/my-vault &amp;&amp; claude
+            <div class="relative group">
+              <pre class="bg-gray-900 text-gray-100 font-mono text-sm p-4 rounded overflow-x-auto"><code><span class="text-gray-500">$</span> cd ~/my-vault &amp;&amp; claude
 <span class="text-gray-500">&gt;</span> /log-call
 <span class="text-gray-500">&gt;</span> /pipeline-report
 <span class="text-gray-500">&gt;</span> /vault-health</code></pre>
+              <button class="copy-btn" data-copy="cd ~/my-vault && claude">COPY</button>
+            </div>
           </div>
         </div>
       </div>

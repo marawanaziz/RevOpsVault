@@ -33,3 +33,36 @@ pre {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+/* Copy button */
+.copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.625rem;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.05em;
+  color: #9ca3af;
+  background: transparent;
+  border: 1px solid #4b5563;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.group:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  color: #fff;
+  border-color: #9ca3af;
+}
+
+.copy-btn.copied {
+  color: #34d399;
+  border-color: #34d399;
+}
